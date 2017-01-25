@@ -22,7 +22,7 @@ $(document).ready(function(){
 
 
 	//get city location
-	$.getJSON("http://freegeoip.net/json/", getUserLocation);
+	$.getJSON("https://freegeoip.net/json/", getUserLocation);
 	var city, latitude, longitude;
 
 	function getUserLocation(data){
