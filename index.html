@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Local Weather app</title>
+    <link rel="icon" href="favicon.png">
+
+	<!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <!-- Bootstrap minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Google Font-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <!-- Weather icons-->
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/1.3.2/css/weather-icons.min.css">
+
+	<!-- Custom stylesheet-->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>	
+	<div class="background-image"></div>
+	<div class="wrapper">
+		<div class="container">
+			<div class="main">
+				<div class="main-container">
+					<h1>L<i class="wi wi-hail"></i>cal Weather App</h1>
+					<button id="expand-btn" class="btn">Expand</button>
+					<div class="weather-info">
+						<span id="city-name"></span><br>
+						<span id="temp-num"></span><a href="#">&deg;<span id="temp-measure">C</span></a><br> 
+						<span id="weather-main"></span>
+					</div>
+					<div id="info-expanded" class="hidden"></div>
+					<span id="weather-desc" class="hidden"><i id="weather-icon" class="wi"></i></span>
+	
+				</div>
+				<div id="logo" class="hidden"><i class="wi wi-meteor"></i></div>
+			</div>
+		</div>
+		
+	</div>
+		<!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+	<!-- Main js-->
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
