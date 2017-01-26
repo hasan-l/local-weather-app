@@ -23,7 +23,6 @@
 <body>	
 	<div class="background-image"></div>
 	<div class="wrapper">
-		<div class="container">
 			<div class="main">
 				<div class="main-container">
 					<h1>L<i class="wi wi-hail"></i>cal Weather App</h1>
@@ -33,15 +32,15 @@
 						<span id="temp-num"></span><a href="#">&deg;<span id="temp-measure">C</span></a><br> 
 						<span id="weather-main"></span>
 					</div>
-					<div id="info-expanded" class="hidden"></div>
-					<span id="weather-desc" class="hidden"><i id="weather-icon" class="wi"></i></span>
-	
-				</div>
+					<i id="weather-icon" class="hidden wi"></i>
+					<div class="credits hidden">
+						Special thanks to <a href="http://freegeoip.net/">freegeoip.net</a>, <a href="https://www.wunderground.com/">Weather Underground</a>
+						and <a href="https://erikflowers.github.io/weather-icons/">Erik Flowers (Weather icons)</a>
+					</div>
+				</div><!-- /main-container -->
 				<div id="logo" class="hidden"><i class="wi wi-meteor"></i></div>
-			</div>
-		</div>
-		
-	</div>
+			</div><!-- /main -->
+	</div><!-- /wrapper -->
 		<!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
