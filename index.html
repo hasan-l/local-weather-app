@@ -8,8 +8,6 @@
     <title>Local Weather app</title>
     <link rel="icon" href="favicon.png">
 
-	<!-- Font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
     <!-- Bootstrap minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <!-- Google Font-->
@@ -23,25 +21,33 @@
 <body>	
 	<div class="background-image"></div>
 	<div class="wrapper">
-			<div class="main">
-				<div class="main-container">
+
+			<div class="weather-container">
+
+				<div class="container-text">
+
 					<h1>L<i class="wi wi-hail"></i>cal Weather App</h1>
 					<button id="expand-btn" class="btn">Expand</button>
 					<div class="weather-info">
 						<span id="city-name"></span><br>
 						<span id="temp-num"></span><a href="#">&deg;<span id="temp-measure">C</span></a><br> 
-						<span id="weather-main"></span>
+						<span id="weather-info"></span>
 					</div>
 					<i id="weather-icon" class="hidden wi"></i>
 					<div class="credits hidden">
 						Special thanks to <a href="https://freegeoip.net/">freegeoip.net</a>, <a href="https://www.wunderground.com/">Weather Underground</a>
 						and <a href="https://erikflowers.github.io/weather-icons/">Erik Flowers (Weather icons)</a>
 					</div>
-				</div><!-- /main-container -->
+
+				</div><!-- /container-text -->
+
 				<div id="logo" class="hidden"><i class="wi wi-meteor"></i></div>
-			</div><!-- /main -->
+			</div><!-- /weather-container -->
+
 	</div><!-- /wrapper -->
-		<!-- jQuery -->
+	
+	<!--********** SCRIPTS **********-->
+	<!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
 	<!-- Main js-->
